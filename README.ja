@@ -1,0 +1,49 @@
+TITLE
+- gauche-wordnet-ja
+    日本語 WordNet データベースを Gauche で利用するためのライブラリモジュール
+
+AUTHOR
+- naoya_t
+    http://blog.livedoor.jp/naoya_t
+    http://twitter.com/naoya_t
+    http://github.com/naoyat
+
+REQUIREMENTS
+- Gauche
+    最近のやつなら大丈夫だと思う。厳密には調べてない
+- wn-ja
+    DBファイル (wnjpn-0.9.db) の位置を lang/wordnet-ja.scm の wnjpn-dbfile に設定する。
+
+DEMO
+- とりあえず
+    % make demo
+
+INSTALL
+- とりあえず
+    % sudo mkdir /usr/local/share/gauche/site/lib/lang
+    % sudo cp lang/wordnet-ja.scm /usr/local/share/gauche/site/lib/lang/
+
+FILES
+- wordnet-ja.scm, wordnet-ja-test.scm
+    APIライブラリ（とテスト）
+- wn.scm
+    フロントエンドプログラム。yanbeさんの wn.py からの移植。
+- simple-demo.scm, advanced-demo.scm
+    JAWJAW のデモの移植。
+
+LICENSE
+- MIT License
+    http://www.opensource.org/licenses/mit-license.php
+    http://sourceforge.jp/projects/opensource/wiki/licenses%2FMIT_license
+
+SEE ALSO
+- 日本語 WordNet (wn-ja)
+    http://nlpwww.nict.go.jp/wn-ja/
+- WordNet::Multi -- Perl Module (Francis Bond)
+    http://nlpwww.nict.go.jp/wn-ja/data/WordNet-Multi-0.1.tar.gz
+- Python版 フロントエンド (yanbe.diff)
+    http://subtech.g.hatena.ne.jp/y_yanbe/20090314/p2
+- JAWJAW -- Java版 フロントエンド (Hideki Shima)
+    http://www.cs.cmu.edu/~hideki/softwares/jawjaw/
+- Ruby版 フロントエンド (bubbles)
+    http://d.hatena.ne.jp/bubbles/20090315/1237142281/
