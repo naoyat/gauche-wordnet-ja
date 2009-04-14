@@ -1,0 +1,7 @@
+インデックスを張り直すと速くなるらしい：
+
+DROP INDEX sense_idx;
+CREATE INDEX sense_synset_idx ON sense (synset);
+CREATE INDEX sense_wordid_idx ON sense (wordid);
+CREATE INDEX synset_id_idx ON synset (synset);
+CREATE INDEX synset_def_id_idx ON synset_def (synset);
